@@ -2,7 +2,7 @@
 
 Lv1: iOS Development Course
 
-## Content:-
+## Content
 
-- Playgounds
+- Playgrounds
 
