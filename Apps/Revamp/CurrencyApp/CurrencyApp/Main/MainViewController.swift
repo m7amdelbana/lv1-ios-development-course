@@ -16,6 +16,15 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad")
+        setupConvertButton()
+    }
+    
+    private func setupConvertButton() {
+        convertButton.layer.cornerRadius = 20
+        convertButton.layer.borderColor = UIColor(named: "PrimaryColor")?.cgColor
+        convertButton.layer.borderWidth = 2
+        convertButton.backgroundColor = .clear
+        convertButton.setTitleColor(UIColor(named: "PrimaryColor"), for: .normal)
     }
     
     override func viewWillAppear(_ animated: Bool) {

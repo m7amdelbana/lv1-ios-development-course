@@ -14,6 +14,7 @@
 		54CEDE3D2AD9BBA100584AD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54CEDE3B2AD9BBA100584AD3 /* Main.storyboard */; };
 		54CEDE3F2AD9BBA300584AD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54CEDE3E2AD9BBA300584AD3 /* Assets.xcassets */; };
 		54CEDE422AD9BBA300584AD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54CEDE402AD9BBA300584AD3 /* LaunchScreen.storyboard */; };
+		54D55AD92ADF1D6E007605E8 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D55AD82ADF1D6E007605E8 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		54CEDE3E2AD9BBA300584AD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54CEDE412AD9BBA300584AD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54CEDE432AD9BBA300584AD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54D55AD82ADF1D6E007605E8 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				54CEDE392AD9BBA100584AD3 /* MainViewController.swift */,
+				54D55AD82ADF1D6E007605E8 /* ResultViewController.swift */,
 				54CEDE3B2AD9BBA100584AD3 /* Main.storyboard */,
 			);
 			path = Main;
@@ -169,6 +172,7 @@
 				54CEDE3A2AD9BBA100584AD3 /* MainViewController.swift in Sources */,
 				54CEDE362AD9BBA100584AD3 /* AppDelegate.swift in Sources */,
 				54CEDE382AD9BBA100584AD3 /* SceneDelegate.swift in Sources */,
+				54D55AD92ADF1D6E007605E8 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
