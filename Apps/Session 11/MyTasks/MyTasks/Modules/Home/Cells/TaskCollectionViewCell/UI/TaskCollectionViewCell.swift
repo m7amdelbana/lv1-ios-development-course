@@ -13,14 +13,12 @@ class TaskCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var idLabel: UILabel!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var dateLabel: UILabel!
-    @IBOutlet private weak var timeLabel: UILabel!
     @IBOutlet private weak var tagView: TagView!
     
     func configure(with model: MyTask) {
         idLabel.text = model.id
         titleLabel.text = model.title
         dateLabel.text = model.date
-        timeLabel.text = model.time
         tagView.setup(title: model.tag.title,
                       color: .init(named: model.tag.color))
     }

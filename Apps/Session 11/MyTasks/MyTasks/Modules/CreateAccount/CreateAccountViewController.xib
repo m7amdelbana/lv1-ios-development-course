@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateAccountViewController" customModule="MyTasks" customModuleProvider="target">
             <connections>
                 <outlet property="nameTextField" destination="SY6-3P-5pA" id="aPj-AQ-Ohy"/>
-                <outlet property="password" destination="S7y-0H-mK9" id="A4e-zy-Mck"/>
+                <outlet property="passwordTextField" destination="S7y-0H-mK9" id="Jfl-IU-al3"/>
                 <outlet property="usernameTextField" destination="HXI-fT-ibm" id="UD4-sS-39Y"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -92,13 +93,13 @@
     </objects>
     <designables>
         <designable name="HXI-fT-ibm">
-            <size key="intrinsicContentSize" width="130" height="34"/>
+            <size key="intrinsicContentSize" width="154" height="18.666666666666668"/>
         </designable>
         <designable name="S7y-0H-mK9">
-            <size key="intrinsicContentSize" width="128" height="34"/>
+            <size key="intrinsicContentSize" width="152" height="17"/>
         </designable>
         <designable name="SY6-3P-5pA">
-            <size key="intrinsicContentSize" width="101.33333333333333" height="34"/>
+            <size key="intrinsicContentSize" width="125.33333333333333" height="18.666666666666668"/>
         </designable>
     </designables>
     <resources>

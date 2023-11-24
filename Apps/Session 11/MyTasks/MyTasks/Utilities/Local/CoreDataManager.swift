@@ -27,19 +27,18 @@ class CoreDataManager {
         myTask.setValue(model.title, forKeyPath: "title")
         myTask.setValue(model.descriptionTitle, forKeyPath: "descriptionTitle")
         myTask.setValue(model.date, forKeyPath: "date")
-        myTask.setValue(model.time, forKeyPath: "time")
         myTask.setValue(model.tag.title, forKeyPath: "tagTitle")
         myTask.setValue(model.tag.color, forKeyPath: "tagColor")
         
         do {
             try managedContext.save()
+            print("Data inserted")
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }
     }
     
     func fetch() -> [NSManagedObject]? {
-        
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return nil
         }
@@ -56,9 +55,7 @@ class CoreDataManager {
         }
     }
     
-    /*
     func fetchMyTasks() -> [MyTask]? {
-        
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return nil
         }
@@ -69,14 +66,15 @@ class CoreDataManager {
         
         do {
             let data = try managedContext.fetch(fetchRequest)
+            
             var myTasks = [MyTask]()
+            
             data.forEach { item in
                 
                 let id = item.value(forKey: "id") as! String
                 let title = item.value(forKey: "title") as! String
                 let descriptionTitle = item.value(forKey: "descriptionTitle") as! String
                 let date = item.value(forKey: "date") as! String
-                let time = item.value(forKey: "time") as! String
                 
                 let tag = MyTaskTag(
                     title: item.value(forKey: "tagTitle") as! String,
@@ -87,7 +85,6 @@ class CoreDataManager {
                                     title: title,
                                     descriptionTitle: descriptionTitle,
                                     date: date,
-                                    time: time,
                                     tag: tag)
                 
                 myTasks.append(myTask)
@@ -99,5 +96,4 @@ class CoreDataManager {
             return nil
         }
     }
-    */
 }

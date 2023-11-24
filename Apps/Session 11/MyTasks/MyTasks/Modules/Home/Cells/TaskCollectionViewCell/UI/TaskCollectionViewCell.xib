@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,7 +25,7 @@
                                 <rect key="frame" x="16" y="16" width="420" height="163"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dMg-hh-wjL">
-                                        <rect key="frame" x="0.0" y="0.0" width="94" height="80.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="57" height="80.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xk0-Kq-igx">
                                                 <rect key="frame" x="0.0" y="0.0" width="35.333333333333336" height="17"/>
@@ -39,7 +40,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="1.5" translatesAutoresizingMaskIntoConstraints="NO" id="L3b-iS-jyz">
-                                                <rect key="frame" x="0.0" y="60.333333333333329" width="94" height="20"/>
+                                                <rect key="frame" x="0.0" y="60.333333333333329" width="57" height="20"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="cr5-pa-68u">
                                                         <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -52,12 +53,6 @@
                                                         <rect key="frame" x="21.666666666666668" y="1.3333333333333286" width="35.333333333333329" height="17"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" name="SubTitle"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cI5-FB-W0d">
-                                                        <rect key="frame" x="58.666666666666657" y="1.3333333333333286" width="35.333333333333343" height="17"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <color key="textColor" name="Title"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -97,7 +92,6 @@
                 <outlet property="dateLabel" destination="h7L-2T-5nZ" id="hpH-eq-dND"/>
                 <outlet property="idLabel" destination="Xk0-Kq-igx" id="95e-Qa-9Yw"/>
                 <outlet property="tagView" destination="5TN-CH-Fxi" id="2IG-Sn-Bgy"/>
-                <outlet property="timeLabel" destination="cI5-FB-W0d" id="vvm-ul-8Iz"/>
                 <outlet property="titleLabel" destination="5dv-OE-g2j" id="H3L-qe-M4d"/>
             </connections>
             <point key="canvasLocation" x="202.29007633587784" y="-36.619718309859159"/>

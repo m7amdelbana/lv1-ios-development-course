@@ -10,6 +10,8 @@
 		542AA0B32AE32224003B811B /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542AA0B22AE32224003B811B /* UIView+Extensions.swift */; };
 		545BF9082AF19865008C9CFB /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545BF9072AF19865008C9CFB /* TagView.swift */; };
 		545BF90A2AF19882008C9CFB /* TagView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545BF9092AF19882008C9CFB /* TagView.xib */; };
+		545FD7CF2B112EB2005E8142 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545FD7CD2B112EB2005E8142 /* DatePickerViewController.swift */; };
+		545FD7D02B112EB2005E8142 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545FD7CE2B112EB2005E8142 /* DatePickerViewController.xib */; };
 		54AD39A92AFA881E00F0D087 /* MyTasks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54AD39A72AFA881E00F0D087 /* MyTasks.xcdatamodeld */; };
 		54AD39AD2AFA899C00F0D087 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD39AB2AFA899C00F0D087 /* TaskViewController.swift */; };
 		54AD39AE2AFA899C00F0D087 /* TaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AD39AC2AFA899C00F0D087 /* TaskViewController.xib */; };
@@ -51,6 +53,8 @@
 		542AA0B22AE32224003B811B /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		545BF9072AF19865008C9CFB /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		545BF9092AF19882008C9CFB /* TagView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagView.xib; sourceTree = "<group>"; };
+		545FD7CD2B112EB2005E8142 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		545FD7CE2B112EB2005E8142 /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
 		54AD39A82AFA881E00F0D087 /* MyTasks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyTasks.xcdatamodel; sourceTree = "<group>"; };
 		54AD39AB2AFA899C00F0D087 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		54AD39AC2AFA899C00F0D087 /* TaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskViewController.xib; sourceTree = "<group>"; };
@@ -121,6 +125,23 @@
 			path = TagView;
 			sourceTree = "<group>";
 		};
+		545FD7CB2B111A95005E8142 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				54FD9E182ADF023400977ABA /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		545FD7CC2B112E98005E8142 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				545FD7CD2B112EB2005E8142 /* DatePickerViewController.swift */,
+				545FD7CE2B112EB2005E8142 /* DatePickerViewController.xib */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
 		54AD39A52AFA87C900F0D087 /* Local */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,12 +207,14 @@
 		54B09DB02AEC38D5000EC488 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				545FD7CC2B112E98005E8142 /* DatePicker */,
 				54AD39AA2AFA897E00F0D087 /* Task */,
 				54D89B0F2AF1872C003C2131 /* Login */,
 				54D89B0A2AF186FD003C2131 /* CreateAccount */,
 				54D89B002AF17FD0003C2131 /* Introduction */,
 				54D89AFF2AF17FB3003C2131 /* Splash */,
 				54B09DB82AEC425F000EC488 /* Home */,
+				545FD7CB2B111A95005E8142 /* Launch */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -282,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				54C111DD2AE30A8D00EAFD50 /* SplashViewController.swift */,
+				54FD9E132ADF023300977ABA /* Main.storyboard */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -364,8 +388,6 @@
 				54C111DF2AE30B5500EAFD50 /* App */,
 				54D89B072AF18321003C2131 /* Utilities */,
 				54B09DB02AEC38D5000EC488 /* Modules */,
-				54FD9E132ADF023300977ABA /* Main.storyboard */,
-				54FD9E182ADF023400977ABA /* LaunchScreen.storyboard */,
 				54FD9E1B2ADF023400977ABA /* Info.plist */,
 			);
 			path = MyTasks;
@@ -436,6 +458,7 @@
 				54FD9E172ADF023400977ABA /* Assets.xcassets in Resources */,
 				54D89B042AF1800D003C2131 /* IntroductionViewController.xib in Resources */,
 				54B09DCD2AEC63BE000EC488 /* TaskCollectionViewCell.xib in Resources */,
+				545FD7D02B112EB2005E8142 /* DatePickerViewController.xib in Resources */,
 				54AD39B62AFAC3DF00F0D087 /* TagSelectionCell.xib in Resources */,
 				54FD9E152ADF023300977ABA /* Main.storyboard in Resources */,
 				54B09DBE2AEC42AC000EC488 /* TaskTableViewCell.xib in Resources */,
@@ -455,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				545BF9082AF19865008C9CFB /* TagView.swift in Sources */,
+				545FD7CF2B112EB2005E8142 /* DatePickerViewController.swift in Sources */,
 				54B09DBD2AEC42AC000EC488 /* TaskTableViewCell.swift in Sources */,
 				54D89B092AF1832F003C2131 /* RootRouter.swift in Sources */,
 				54FD9E122ADF023300977ABA /* IntroductionViewController.swift in Sources */,

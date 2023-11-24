@@ -7,26 +7,25 @@
 
 import UIKit
 
+// MARK: CoreData class
+
 class MyTask {
     
     let id: String
     let title: String
     let descriptionTitle: String
     let date: String
-    let time: String
     let tag: MyTaskTag
     
     init(id: String = "",
          title: String,
          descriptionTitle: String = "",
          date: String,
-         time: String = "",
          tag: MyTaskTag) {
         self.id = id
         self.title = title
         self.descriptionTitle = descriptionTitle
         self.date = date
-        self.time = time
         self.tag = tag
     }
 }

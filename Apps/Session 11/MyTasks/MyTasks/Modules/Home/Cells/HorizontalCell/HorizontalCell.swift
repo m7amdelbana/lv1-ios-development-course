@@ -19,6 +19,8 @@ protocol HorizontalCellDelegate {
 
 class HorizontalCell: UITableViewCell {
     
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var todaysTasksLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     private var list = [MyTask]()
@@ -29,9 +31,20 @@ class HorizontalCell: UITableViewCell {
                    delegate: HorizontalCellDelegate?) {
         self.list = list
         self.delegate = delegate
-        collectionView.reloadData()
+        
+        // Fetch user data
+        let name = UserDefaults.standard.string(forKey: "NAME") ?? ""
+        welcomeLabel.text = "Hello, \(name)"
+        
+        if list.isEmpty {
+            todaysTasksLabel.isHidden = true
+            collectionView.isHidden = true
+        } else {
+            todaysTasksLabel.isHidden = false
+            collectionView.isHidden = false
+            collectionView.reloadData()
+        }
     }
-    
     
     func configure(with list: [MyTask],
                    didSelectItem: ((MyTask) -> Void)?) {

@@ -42,6 +42,7 @@ class TaskViewController: UIViewController {
         }
         
         setupCollectionView()
+        dateTextField.delegate = self
     }
     
     private func setupEditUI(myTask: MyTask) {
@@ -57,7 +58,7 @@ class TaskViewController: UIViewController {
         // Fill data
         
         titleTextField.text = myTask.title
-        dateTextField.text = "\(myTask.date) \(myTask.time)"
+        dateTextField.text = myTask.date
         descriptionTextView.text = myTask.descriptionTitle
         
         tags.forEach { item in
@@ -79,7 +80,27 @@ class TaskViewController: UIViewController {
     }
     
     @IBAction func actionManageTask(_ sender: Any) {
-        
+        if let myTask {
+            // Edit task
+        } else {
+            // Add task
+            
+            let title = titleTextField.text ?? ""
+            let description = descriptionTextView.text ?? ""
+            let date = dateTextField.text ?? ""
+            
+            guard let selectedTag else { return }
+            
+            let newTask = MyTask(
+                id: "#555",
+                title: title,
+                descriptionTitle: description,
+                date: date,
+                tag: selectedTag)
+            
+            CoreDataManager().save(model: newTask)
+            dismiss(animated: true)
+        }
     }
     
     @IBAction func actionCompleteTask(_ sender: Any) {
@@ -87,7 +108,29 @@ class TaskViewController: UIViewController {
     }
 }
 
-extension TaskViewController: UICollectionViewReference {
+extension TaskViewController: UITextFieldDelegate {
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        if textField == dateTextField {
+            let vc = DatePickerViewController { date in
+                // "Sunady 12/11/2023 10:30 AM"
+                // "12/11/2023 10:30 AM"
+                
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd/MM/yyyy hh:mm a"
+                self.dateTextField.text = formatter.string(from: date)
+            }
+            
+            vc.modalPresentationStyle = .overFullScreen
+            present(vc, animated: true)
+            return false
+        }
+        return true
+    }
+}
+
+extension TaskViewController: UICollectionViewReference,
+                              UICollectionViewDelegateFlowLayout {
     
     func setupCollectionView() {
         selectTagCollectionView.registerCellNib(TagSelectionCell.self)
@@ -137,5 +180,9 @@ extension TaskViewController: UICollectionViewReference {
         //        }
         
         selectTagCollectionView.reloadData()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 120, height: 40)
     }
 }

@@ -62,6 +62,8 @@ extension HomeViewController: HorizontalCellDelegate {
     
     func didLogOutClicked() {
         // Delete user data
+        // UserDefaults.standard.removeObject(forKey: "")
+        UserDefaults.standard.set(false, forKey: "IS_USER_LOGIN")
         
         let vc = IntroductionViewController()
         RootRouter.presentRootScreen(with: vc)

@@ -28,41 +28,25 @@ class HomeViewController: UIViewController {
         navigationItem.title = "MyTasks"
         
         // TableView
-        
-        myTasksTableViewList.append(.init(
-            title: "Pay Bill",
-            descriptionTitle: "Pay Bill for today",
-            date: "09:00 AM 16 OCT 2023",
-            tag: .init(title: "Finance",
-                       color: AppColor.secondary.rawValue)
-        ))
-        
-        myTasksTableViewList.append(.init(
-            title: "Sugar Tablet",
-            date: "10:30 AM 17 OCT 2023",
-            tag: .init(title: "Health",
-                       color: "Primary")
-        ))
+        myTasksTableViewList = CoreDataManager().fetchMyTasks() ?? []
         
         // CollectionView
         
-        myTasksCollectionViewList.append(.init(
-            id: "Task #233",
-            title: "Daily Gym Reminder Gym Reminder",
-            date: "16 OCT 2023",
-            time: "08:00 AM",
-            tag: .init(title: "Workout",
-                       color: "Primary")
-        ))
-        
-        myTasksCollectionViewList.append(.init(
-            id: "Task #234",
-            title: "Attend office meeting",
-            date: "17 OCT 2023",
-            time: "09:00 AM",
-            tag: .init(title: "Health",
-                       color: "Primary")
-        ))
+//        myTasksCollectionViewList.append(.init(
+//            id: "Task #233",
+//            title: "Daily Gym Reminder Gym Reminder",
+//            date: "16 OCT 2023 08:00 AM",
+//            tag: .init(title: "Workout",
+//                       color: "Primary")
+//        ))
+//        
+//        myTasksCollectionViewList.append(.init(
+//            id: "Task #234",
+//            title: "Attend office meeting",
+//            date: "17 OCT 2023",
+//            tag: .init(title: "Health",
+//                       color: "Primary")
+//        ))
         
         setupTableView()
     }

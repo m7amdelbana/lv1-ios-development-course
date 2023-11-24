@@ -16,12 +16,23 @@ class SplashViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.presentIntroduction()
+            let isUserLogin = UserDefaults.standard.bool(forKey: "IS_USER_LOGIN")
+            if isUserLogin {
+                self.goToHome()
+            } else {
+                self.presentIntroduction()
+            }
         }
     }
     
     private func presentIntroduction() {
         let vc = IntroductionViewController()
+        let nav = UINavigationController(rootViewController: vc)
+        RootRouter.presentRootScreen(with: nav)
+    }
+    
+    private func goToHome() {
+        let vc = HomeViewController()
         let nav = UINavigationController(rootViewController: vc)
         RootRouter.presentRootScreen(with: nav)
     }
