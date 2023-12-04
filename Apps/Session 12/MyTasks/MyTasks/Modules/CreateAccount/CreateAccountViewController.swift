@@ -53,6 +53,8 @@ class CreateAccountViewController: UIViewController {
         // MARK: Search about how to save object conatins those data
         // How to save objects at UserDefaults?
         
+        CoreDataManager().remove()
+        
         UserDefaults.standard.set(true, forKey: "IS_USER_LOGIN")
         UserDefaults.standard.set(name, forKey: "NAME")
         UserDefaults.standard.set(username, forKey: "USERNAME")

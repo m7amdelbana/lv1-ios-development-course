@@ -60,6 +60,27 @@ class CoreDataManager {
         }
     }
     
+    func remove() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "MyTaskEntity")
+        
+        do {
+            let data = try managedContext.fetch(fetchRequest)
+            /// managedContext.delete(data[0])
+            for item in data {
+                managedContext.delete(item)
+            }
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+            return
+        }
+    }
+    
     func update(model: MyTask) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
