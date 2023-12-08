@@ -1,0 +1,24 @@
+PODS:
+  - IBAnimatable (6.1.0)
+  - IQKeyboardManagerSwift (6.3.0)
+  - SkeletonView (1.30.4)
+
+DEPENDENCIES:
+  - IBAnimatable
+  - IQKeyboardManagerSwift (= 6.3.0)
+  - SkeletonView
+
+SPEC REPOS:
+  trunk:
+    - IBAnimatable
+    - IQKeyboardManagerSwift
+    - SkeletonView
+
+SPEC CHECKSUMS:
+  IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
+
+PODFILE CHECKSUM: 5ba847b5fad3971fc4e3d725698c4827be730d7d
+
+COCOAPODS: 1.12.1
