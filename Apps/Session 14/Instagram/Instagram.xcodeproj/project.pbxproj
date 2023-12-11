@@ -21,6 +21,7 @@
 		54483D8D2B1E74CA00BC1DD7 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54483D8C2B1E74CA00BC1DD7 /* AppTabBarController.swift */; };
 		54483D912B1E75D700BC1DD7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54483D8F2B1E75D700BC1DD7 /* ProfileViewController.swift */; };
 		54483D922B1E75D700BC1DD7 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54483D902B1E75D700BC1DD7 /* ProfileViewController.xib */; };
+		54EDDA292B23C45700981D71 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54EDDA282B23C45700981D71 /* GoogleService-Info.plist */; };
 		DF0935CB0D815F2F382789CC /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEF73895DFF1D850FD5072B /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		54483D8F2B1E75D700BC1DD7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		54483D902B1E75D700BC1DD7 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		54EDDA242B23A28B00981D71 /* IBAnimatable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IBAnimatable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54EDDA282B23C45700981D71 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8438544FA8DB345D1109BC17 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 				54483D792B1E6B4100BC1DD7 /* Resources */,
 				54483D822B1E6D2F00BC1DD7 /* Utilities */,
 				54483D712B1E68B300BC1DD7 /* Info.plist */,
+				54EDDA282B23C45700981D71 /* GoogleService-Info.plist */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				54483D892B1E70D000BC1DD7 /* HomeViewController.xib in Resources */,
 				54483D7F2B1E6B7E00BC1DD7 /* SplashViewController.xib in Resources */,
 				54483D6D2B1E68B300BC1DD7 /* Assets.xcassets in Resources */,
+				54EDDA292B23C45700981D71 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
