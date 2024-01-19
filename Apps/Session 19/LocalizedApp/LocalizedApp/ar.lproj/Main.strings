@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; configuration.title = "Test Button"; ObjectID = "6O1-Cd-FQd"; */
+"6O1-Cd-FQd.configuration.title" = "تجربة زرار";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6O1-Cd-FQd"; */
+"6O1-Cd-FQd.normalTitle" = "زرار";
+
+/* Class = "UILabel"; text = "Test localization"; ObjectID = "arO-Xw-pDg"; */
+"arO-Xw-pDg.text" = "تجربة الترجمة";
