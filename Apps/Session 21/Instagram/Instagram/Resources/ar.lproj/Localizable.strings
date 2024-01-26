@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Instagram
+
+  Created by Mohamed Elbana on 19/01/2024.
+  
+*/
+
+"SignIn.mesaage" = "قم بتسجيل الدخول لمشاهدة الصور ومقاطع الفيديو والبكرات من أصدقائك.";
+"SignIn.continue_with_facebook" = "المتابعة بفيسبوك";
+"SignIn.continue_with_google" = "المتابعة بجوجل";
+"hello_name" = "اهلا، %@";
