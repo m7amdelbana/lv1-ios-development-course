@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInViewController" customModule="Instagram" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="J5o-sa-6uP">
+                    <rect key="frame" x="30" y="276" width="333" height="300.33333333333326"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram-logo" translatesAutoresizingMaskIntoConstraints="NO" id="H2f-8Q-tbA">
+                            <rect key="frame" x="0.0" y="0.0" width="333" height="67"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="67" id="VfU-AB-L12"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to see photos, videos and reels from your friends." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9z-jt-5Nf">
+                            <rect key="frame" x="0.0" y="116.99999999999999" width="333" height="31.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                            <color key="textColor" name="DescriptionColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localized" value="SignIn.mesaage"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="oex-N5-4FU">
+                            <rect key="frame" x="0.0" y="198.33333333333331" width="333" height="102"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Goa-aB-bUh">
+                                    <rect key="frame" x="0.0" y="0.0" width="333" height="42"/>
+                                    <color key="backgroundColor" name="FacebookColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="42" id="bLL-VG-S5m"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Continue with Facebook" image="facebook-icon"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localized" value="SignIn.continue_with_facebook"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didPressedFacebook:" destination="-1" eventType="touchUpInside" id="Szu-ax-iuu"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITM-oY-KLz">
+                                    <rect key="frame" x="0.0" y="60.000000000000057" width="333" height="42"/>
+                                    <color key="backgroundColor" name="GoogleColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="42" id="lel-E9-7j1"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Continue with Google" image="google-icon"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localized" value="SignIn.continue_with_google"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didPressedGoogle:" destination="-1" eventType="touchUpInside" id="LZt-JX-MzU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GF9-nn-i80">
+                    <rect key="frame" x="0.0" y="742" width="393" height="1"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="4xv-Y8-Bpz"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sza-tw-eg1">
+                    <rect key="frame" x="103" y="761" width="187" height="27"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLz-78-GRC">
+                            <rect key="frame" x="0.0" y="0.0" width="133" height="27"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" name="SubTitleColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXc-1K-fqJ">
+                            <rect key="frame" x="138" y="0.0" width="49" height="27"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Sign up.">
+                                <color key="titleColor" name="TitleColor"/>
+                            </state>
+                            <connections>
+                                <action selector="didPressedSignUp:" destination="-1" eventType="touchUpInside" id="nLa-l2-N6W"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="J5o-sa-6uP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="1uC-u8-tMQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J5o-sa-6uP" secondAttribute="trailing" constant="30" id="K9k-Z0-DeN"/>
+                <constraint firstItem="sza-tw-eg1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OQh-Lf-gT6"/>
+                <constraint firstItem="J5o-sa-6uP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="P5J-1D-Fpu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GF9-nn-i80" secondAttribute="trailing" id="eDx-LW-P7c"/>
+                <constraint firstItem="GF9-nn-i80" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="f37-Ix-ja7"/>
+                <constraint firstItem="sza-tw-eg1" firstAttribute="top" secondItem="GF9-nn-i80" secondAttribute="bottom" constant="18" id="hyL-gT-b70"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sza-tw-eg1" secondAttribute="bottom" constant="30" id="n2W-dL-4k9"/>
+                <constraint firstItem="J5o-sa-6uP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="w4m-5S-tgB"/>
+            </constraints>
+            <point key="canvasLocation" x="50" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="facebook-icon" width="20" height="20"/>
+        <image name="google-icon" width="20" height="20"/>
+        <image name="instagram-logo" width="422" height="151"/>
+        <namedColor name="DescriptionColor">
+            <color red="0.22745098039215686" green="0.22745098039215686" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FacebookColor">
+            <color red="0.094117647058823528" green="0.46666666666666667" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GoogleColor">
+            <color red="0.85882352941176465" green="0.26666666666666666" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SubTitleColor">
+            <color red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
