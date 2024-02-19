@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7CAF3A0E-9971-4578-BC16-6CC78F9AB153"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF879019-600E-4D94-95E6-C82A00D0DC34"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Talabaty/Network/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "request()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FF879019-600E-4D94-95E6-C82A00D0DC34 - ca5a17f6d16b2d63"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Talabaty.NetworkManager.request() -&gt; ()"
+                  moduleName = "Talabaty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohamedelbana/Desktop/lv1-ios-development-course/Apps/Session%2024/Talabaty/Talabaty/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "544">
+               </Location>
+               <Location
+                  uuid = "FF879019-600E-4D94-95E6-C82A00D0DC34 - ba861b17b8a3ce4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Talabaty.NetworkManager.request() -&gt; ()"
+                  moduleName = "Talabaty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohamedelbana/Desktop/lv1-ios-development-course/Apps/Session%2024/Talabaty/Talabaty/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1684">
+               </Location>
+               <Location
+                  uuid = "FF879019-600E-4D94-95E6-C82A00D0DC34 - ba861b17b8a3ce05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Talabaty.NetworkManager.request() -&gt; ()"
+                  moduleName = "Talabaty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohamedelbana/Desktop/lv1-ios-development-course/Apps/Session%2024/Talabaty/Talabaty/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1548">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A90F7F6-E88F-4AB1-B10C-355F7BEC6550"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Talabaty/Network/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "request()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3A90F7F6-E88F-4AB1-B10C-355F7BEC6550 - ca5a17f6d16b2d63"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Talabaty.NetworkManager.request() -&gt; ()"
+                  moduleName = "Talabaty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohamedelbana/Desktop/lv1-ios-development-course/Apps/Session%2024/Talabaty/Talabaty/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "544">
+               </Location>
+               <Location
+                  uuid = "3A90F7F6-E88F-4AB1-B10C-355F7BEC6550 - ba861b17b8a3ce4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Talabaty.NetworkManager.request() -&gt; ()"
+                  moduleName = "Talabaty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohamedelbana/Desktop/lv1-ios-development-course/Apps/Session%2024/Talabaty/Talabaty/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1684">
+               </Location>
+               <Location
+                  uuid = "3A90F7F6-E88F-4AB1-B10C-355F7BEC6550 - ba861b17b8a3ce4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Talabaty.NetworkManager.request() -&gt; ()"
+                  moduleName = "Talabaty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohamedelbana/Desktop/lv1-ios-development-course/Apps/Session%2024/Talabaty/Talabaty/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "2192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCFFBE7D-67DE-4504-8DDA-D9CE5F2E3233"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Talabaty/Network/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "request()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DCFFBE7D-67DE-4504-8DDA-D9CE5F2E3233 - ba861b17b8a3ce81"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Talabaty.NetworkManager.request() -&gt; ()"
+                  moduleName = "Talabaty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohamedelbana/Desktop/lv1-ios-development-course/Apps/Session%2024/Talabaty/Talabaty/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "1316">
+               </Location>
+               <Location
+                  uuid = "DCFFBE7D-67DE-4504-8DDA-D9CE5F2E3233 - ba861b17b8a3c943"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Talabaty.NetworkManager.request() -&gt; ()"
+                  moduleName = "Talabaty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohamedelbana/Desktop/lv1-ios-development-course/Apps/Session%2024/Talabaty/Talabaty/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "1752">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "349AE5A4-8348-4EF0-8022-4903777C0312"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Talabaty/Network/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "request()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "349AE5A4-8348-4EF0-8022-4903777C0312 - ba861b17b8a3c9ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Talabaty.NetworkManager.request() -&gt; ()"
+                  moduleName = "Talabaty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohamedelbana/Desktop/lv1-ios-development-course/Apps/Session%2024/Talabaty/Talabaty/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "1020">
+               </Location>
+               <Location
+                  uuid = "349AE5A4-8348-4EF0-8022-4903777C0312 - ba861b17b8a3c99e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Talabaty.NetworkManager.request() -&gt; ()"
+                  moduleName = "Talabaty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohamedelbana/Desktop/lv1-ios-development-course/Apps/Session%2024/Talabaty/Talabaty/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "848">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

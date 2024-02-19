@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Instagram
+
+  Created by Mohamed Elbana on 19/01/2024.
+  
+*/
+
+"SignIn.mesaage" = "Sign in to see photos, videos and reels from your friends.";
+"SignIn.continue_with_facebook" = "Continue with Facebook";
+"SignIn.continue_with_google" = "Continue with Google";
+
+"hello_name" = "Hello, %@";
