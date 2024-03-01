@@ -16,16 +16,20 @@ class ChatViewController: UIViewController {
     
     private var screenData = [ChatMessage]()
     private let receiverId: String
-    private var ref: DatabaseReference?
+    private let chatId: String
+    private var ref = Database.database().reference()
+    private let currentUser = Auth.auth().currentUser
     
-    init(receiverId: String) {
+    init(receiverId: String, chatId: String) {
         self.receiverId = receiverId
+        self.chatId = chatId
         super.init(nibName: String(describing: Self.self),
                    bundle: Bundle(for: Self.self))
     }
     
     required init?(coder: NSCoder) {
         self.receiverId = ""
+        self.chatId = ""
         super.init(coder: coder)
     }
     
@@ -43,35 +47,32 @@ class ChatViewController: UIViewController {
     }
     
     private func loadData() {
-        ref = Database.database().reference()
-        guard let ref else { return }
-        
-        ref.child("Messages").observe(.value, with: { (snapshot) -> Void in
-            self.screenData.removeAll()
-            
-            for childSnapshot in snapshot.children.allObjects as! [DataSnapshot] {
-                let model = ChatMessage(data: childSnapshot)
-                self.screenData.append(model)
-            }
-            
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        })
+        ref.child("Messages")
+            .queryOrdered(byChild: "chatId")
+            .queryEqual(toValue: chatId)
+            .observe(.value, with: { (snapshot) -> Void in
+                self.screenData.removeAll()
+                
+                for childSnapshot in snapshot.children.allObjects as! [DataSnapshot] {
+                    let model = ChatMessage(data: childSnapshot)
+                    self.screenData.append(model)
+                }
+                
+                self.screenData = self.screenData.sorted(by: { $0.formattedDate.compare($1.formattedDate) == .orderedAscending })
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            })
     }
     
     private func sendMessage() {
         ref = Database.database().reference()
-        guard let ref else { return }
-        
-        let currentUser = Auth.auth().currentUser
-        guard let uid = currentUser?.uid else { return }
-        
         let messsageId = UUID().uuidString
         
         let currentDate = Date()
         let formatter = DateFormatter()
-        formatter.dateFormat = "hh:mm a dd/MM/yyyy"
+        formatter.dateFormat = "hh:mm:ss a dd/MM/yyyy"
         let stringDate = formatter.string(from: currentDate)
         
         ref.child("Messages").child(messsageId).setValue(
@@ -79,9 +80,9 @@ class ChatViewController: UIViewController {
                 "id": messsageId,
                 "message": messageTextField.text ?? "",
                 "receiverId": receiverId,
-                "senderId": uid,
-                "users": "\(uid),\(receiverId)",
-                "date": stringDate
+                "senderId": currentUser?.uid ?? "",
+                "chatId": chatId,
+                "date": stringDate,
             ])
         
         messageTextField.text = ""

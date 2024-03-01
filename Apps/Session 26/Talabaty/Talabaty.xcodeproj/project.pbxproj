@@ -21,6 +21,9 @@
 		5486E1DB2B892E05000204E7 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5486E1DA2B892E05000204E7 /* HTTPMethod.swift */; };
 		5486E1DE2B892FD8000204E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5486E1DD2B892FD8000204E7 /* Constants.swift */; };
 		5486E1E02B89314A000204E7 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5486E1DF2B89314A000204E7 /* APIResponse.swift */; };
+		54937BD22B92340800A2C2D2 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54937BD12B92340800A2C2D2 /* APIError.swift */; };
+		54937BD42B92383D00A2C2D2 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54937BD32B92383D00A2C2D2 /* Encodable+Extensions.swift */; };
+		54937BD62B92391800A2C2D2 /* Fail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54937BD52B92391800A2C2D2 /* Fail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		5486E1DA2B892E05000204E7 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		5486E1DD2B892FD8000204E7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5486E1DF2B89314A000204E7 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		54937BD12B92340800A2C2D2 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		54937BD32B92383D00A2C2D2 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
+		54937BD52B92391800A2C2D2 /* Fail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,11 +95,9 @@
 		543FD5E72B83FD0A00D39018 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				54937BD82B9239EA00A2C2D2 /* Manager */,
+				54937BD72B9239D900A2C2D2 /* Componets */,
 				543FD5EA2B83FD8400D39018 /* Models */,
-				543FD5E82B83FD2400D39018 /* NetworkManager.swift */,
-				5486E1D82B892D81000204E7 /* Endpoint.swift */,
-				5486E1DA2B892E05000204E7 /* HTTPMethod.swift */,
-				5486E1DF2B89314A000204E7 /* APIResponse.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -113,6 +117,27 @@
 				5486E1DD2B892FD8000204E7 /* Constants.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		54937BD72B9239D900A2C2D2 /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+				5486E1D82B892D81000204E7 /* Endpoint.swift */,
+				5486E1DA2B892E05000204E7 /* HTTPMethod.swift */,
+				5486E1DF2B89314A000204E7 /* APIResponse.swift */,
+				54937BD12B92340800A2C2D2 /* APIError.swift */,
+				54937BD32B92383D00A2C2D2 /* Encodable+Extensions.swift */,
+				54937BD52B92391800A2C2D2 /* Fail.swift */,
+			);
+			path = Componets;
+			sourceTree = "<group>";
+		};
+		54937BD82B9239EA00A2C2D2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				543FD5E82B83FD2400D39018 /* NetworkManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,14 +212,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				543FD5D52B83FCE300D39018 /* ViewController.swift in Sources */,
+				54937BD62B92391800A2C2D2 /* Fail.swift in Sources */,
 				543FD5D12B83FCE300D39018 /* AppDelegate.swift in Sources */,
 				5486E1D92B892D81000204E7 /* Endpoint.swift in Sources */,
 				543FD5EC2B83FD8E00D39018 /* Page.swift in Sources */,
 				543FD5E92B83FD2400D39018 /* NetworkManager.swift in Sources */,
+				54937BD22B92340800A2C2D2 /* APIError.swift in Sources */,
 				5486E1E02B89314A000204E7 /* APIResponse.swift in Sources */,
 				5486E1DE2B892FD8000204E7 /* Constants.swift in Sources */,
 				5486E1DB2B892E05000204E7 /* HTTPMethod.swift in Sources */,
 				543FD5D32B83FCE300D39018 /* SceneDelegate.swift in Sources */,
+				54937BD42B92383D00A2C2D2 /* Encodable+Extensions.swift in Sources */,
 				543FD5DB2B83FCE300D39018 /* Talabaty.xcdatamodeld in Sources */,
 				543FD5EE2B83FF0F00D39018 /* Category.swift in Sources */,
 			);

@@ -8,14 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let endpint = Endpoint(path: Constants.EndpointPath.categories,
                                method: .get)
         
-        NetworkManager().request(of: endpint) { response in
+        NetworkManager().request(type: Page<Category>.self, of: endpint) { response in
             switch response {
             case .onSuccess:
                 print("onSuccess")
