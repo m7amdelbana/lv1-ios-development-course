@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38FC9889A1467117125A1CAC /* Pods_Talabaty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6975F69C7628AA262B6A6007 /* Pods_Talabaty.framework */; };
+		543FD5D12B83FCE300D39018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543FD5D02B83FCE300D39018 /* AppDelegate.swift */; };
+		543FD5D32B83FCE300D39018 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543FD5D22B83FCE300D39018 /* SceneDelegate.swift */; };
+		543FD5D52B83FCE300D39018 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543FD5D42B83FCE300D39018 /* SplashViewController.swift */; };
+		543FD5D82B83FCE300D39018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543FD5D62B83FCE300D39018 /* Main.storyboard */; };
+		543FD5DB2B83FCE300D39018 /* Talabaty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 543FD5D92B83FCE300D39018 /* Talabaty.xcdatamodeld */; };
+		543FD5DD2B83FCE400D39018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543FD5DC2B83FCE400D39018 /* Assets.xcassets */; };
+		543FD5E02B83FCE400D39018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543FD5DE2B83FCE400D39018 /* LaunchScreen.storyboard */; };
+		5468086C2BAE1CFC006FFC56 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468086B2BAE1CFC006FFC56 /* SplashViewModel.swift */; };
+		5468CA112B9F9FD200F8AA42 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468CA0F2B9F9FD200F8AA42 /* SignInViewController.swift */; };
+		5468CA122B9F9FD200F8AA42 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5468CA102B9F9FD200F8AA42 /* SignInViewController.xib */; };
+		5468CA182B9FA11200F8AA42 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5468CA152B9FA11000F8AA42 /* Poppins-Medium.ttf */; };
+		5468CA192B9FA11200F8AA42 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5468CA162B9FA11100F8AA42 /* Poppins-Bold.ttf */; };
+		5468CA1A2B9FA11200F8AA42 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5468CA172B9FA11200F8AA42 /* Poppins-Regular.ttf */; };
+		54AB34EA2BDC34AC00A5BB59 /* TalabatyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54AB34E92BDC34AC00A5BB59 /* TalabatyCore.framework */; };
+		54AB34EB2BDC34AC00A5BB59 /* TalabatyCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54AB34E92BDC34AC00A5BB59 /* TalabatyCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54AB34EE2BDC34B100A5BB59 /* TalabatyUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54AB34ED2BDC34B100A5BB59 /* TalabatyUI.framework */; };
+		54AB34EF2BDC34B100A5BB59 /* TalabatyUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54AB34ED2BDC34B100A5BB59 /* TalabatyUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54C15EB22BB74F8A00DF06D7 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C15EB12BB74F8A00DF06D7 /* RootRouter.swift */; };
+		54C15EC02BB75B3D00DF06D7 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C15EBF2BB75B3D00DF06D7 /* SignInViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54AB34EC2BDC34AC00A5BB59 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				54AB34EF2BDC34B100A5BB59 /* TalabatyUI.framework in Embed Frameworks */,
+				54AB34EB2BDC34AC00A5BB59 /* TalabatyCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		543FD5CD2B83FCE300D39018 /* Talabaty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talabaty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		543FD5D02B83FCE300D39018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		543FD5D22B83FCE300D39018 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		543FD5D42B83FCE300D39018 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		543FD5D72B83FCE300D39018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		543FD5DA2B83FCE300D39018 /* Talabaty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Talabaty.xcdatamodel; sourceTree = "<group>"; };
+		543FD5DC2B83FCE400D39018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		543FD5DF2B83FCE400D39018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		543FD5E12B83FCE400D39018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5468086B2BAE1CFC006FFC56 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		546808702BAE2F15006FFC56 /* FLEX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FLEX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5468CA0F2B9F9FD200F8AA42 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		5468CA102B9F9FD200F8AA42 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		5468CA152B9FA11000F8AA42 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		5468CA162B9FA11100F8AA42 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		5468CA172B9FA11200F8AA42 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		54AB34E92BDC34AC00A5BB59 /* TalabatyCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TalabatyCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54AB34ED2BDC34B100A5BB59 /* TalabatyUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TalabatyUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C15EB12BB74F8A00DF06D7 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		54C15EBF2BB75B3D00DF06D7 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		6975F69C7628AA262B6A6007 /* Pods_Talabaty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Talabaty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DECFD4F806BE8AE76952C752 /* Pods-Talabaty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talabaty.release.xcconfig"; path = "Target Support Files/Pods-Talabaty/Pods-Talabaty.release.xcconfig"; sourceTree = "<group>"; };
+		E62FDB0F9E419D5B5FEE0B9C /* Pods-Talabaty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talabaty.debug.xcconfig"; path = "Target Support Files/Pods-Talabaty/Pods-Talabaty.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		543FD5CA2B83FCE300D39018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FC9889A1467117125A1CAC /* Pods_Talabaty.framework in Frameworks */,
+				54AB34EA2BDC34AC00A5BB59 /* TalabatyCore.framework in Frameworks */,
+				54AB34EE2BDC34B100A5BB59 /* TalabatyUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21C0BAA26FAEE2CE9B355183 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E62FDB0F9E419D5B5FEE0B9C /* Pods-Talabaty.debug.xcconfig */,
+				DECFD4F806BE8AE76952C752 /* Pods-Talabaty.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		543FD5C42B83FCE300D39018 = {
+			isa = PBXGroup;
+			children = (
+				543FD5CF2B83FCE300D39018 /* Talabaty */,
+				543FD5CE2B83FCE300D39018 /* Products */,
+				21C0BAA26FAEE2CE9B355183 /* Pods */,
+				6EDA56C5BE27FD0328AEB7B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		543FD5CE2B83FCE300D39018 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				543FD5CD2B83FCE300D39018 /* Talabaty.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		543FD5CF2B83FCE300D39018 /* Talabaty */ = {
+			isa = PBXGroup;
+			children = (
+				54C15EB02BB74F7500DF06D7 /* Utilities */,
+				5468CA132B9FA0F300F8AA42 /* Resources */,
+				5468CA0B2B9F9FA100F8AA42 /* Modules */,
+				543FD5D02B83FCE300D39018 /* AppDelegate.swift */,
+				543FD5D22B83FCE300D39018 /* SceneDelegate.swift */,
+				543FD5DC2B83FCE400D39018 /* Assets.xcassets */,
+				543FD5E12B83FCE400D39018 /* Info.plist */,
+				543FD5D92B83FCE300D39018 /* Talabaty.xcdatamodeld */,
+			);
+			path = Talabaty;
+			sourceTree = "<group>";
+		};
+		546808692BAE1CBD006FFC56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				543FD5D42B83FCE300D39018 /* SplashViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5468086A2BAE1CC2006FFC56 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5468086B2BAE1CFC006FFC56 /* SplashViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5468CA0B2B9F9FA100F8AA42 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5468CA0E2B9F9FC100F8AA42 /* SignIn */,
+				5468CA0D2B9F9FB600F8AA42 /* Launch */,
+				5468CA0C2B9F9FAB00F8AA42 /* Splash */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5468CA0C2B9F9FAB00F8AA42 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				5468086A2BAE1CC2006FFC56 /* ViewModel */,
+				546808692BAE1CBD006FFC56 /* View */,
+				543FD5D62B83FCE300D39018 /* Main.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		5468CA0D2B9F9FB600F8AA42 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				543FD5DE2B83FCE400D39018 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		5468CA0E2B9F9FC100F8AA42 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				54C15EBD2BB75B2700DF06D7 /* Domain */,
+				54C15EBC2BB75B2000DF06D7 /* View */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		5468CA132B9FA0F300F8AA42 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5468CA142B9FA0FB00F8AA42 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5468CA142B9FA0FB00F8AA42 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5468CA162B9FA11100F8AA42 /* Poppins-Bold.ttf */,
+				5468CA152B9FA11000F8AA42 /* Poppins-Medium.ttf */,
+				5468CA172B9FA11200F8AA42 /* Poppins-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		54C15EB02BB74F7500DF06D7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				54C15EB12BB74F8A00DF06D7 /* RootRouter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		54C15EBC2BB75B2000DF06D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5468CA0F2B9F9FD200F8AA42 /* SignInViewController.swift */,
+				5468CA102B9F9FD200F8AA42 /* SignInViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54C15EBD2BB75B2700DF06D7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				54C15EBF2BB75B3D00DF06D7 /* SignInViewModel.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6EDA56C5BE27FD0328AEB7B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54AB34ED2BDC34B100A5BB59 /* TalabatyUI.framework */,
+				54AB34E92BDC34AC00A5BB59 /* TalabatyCore.framework */,
+				546808702BAE2F15006FFC56 /* FLEX.framework */,
+				6975F69C7628AA262B6A6007 /* Pods_Talabaty.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		543FD5CC2B83FCE300D39018 /* Talabaty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543FD5E42B83FCE400D39018 /* Build configuration list for PBXNativeTarget "Talabaty" */;
+			buildPhases = (
+				BC688C1A5207841EB6921451 /* [CP] Check Pods Manifest.lock */,
+				543FD5C92B83FCE300D39018 /* Sources */,
+				543FD5CA2B83FCE300D39018 /* Frameworks */,
+				543FD5CB2B83FCE300D39018 /* Resources */,
+				58E42C0A14CFABEC8AFCAD77 /* [CP] Embed Pods Frameworks */,
+				54AB34EC2BDC34AC00A5BB59 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Talabaty;
+			packageProductDependencies = (
+			);
+			productName = Talabaty;
+			productReference = 543FD5CD2B83FCE300D39018 /* Talabaty.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		543FD5C52B83FCE300D39018 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					543FD5CC2B83FCE300D39018 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 543FD5C82B83FCE300D39018 /* Build configuration list for PBXProject "Talabaty" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 543FD5C42B83FCE300D39018;
+			packageReferences = (
+			);
+			productRefGroup = 543FD5CE2B83FCE300D39018 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				543FD5CC2B83FCE300D39018 /* Talabaty */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		543FD5CB2B83FCE300D39018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5468CA122B9F9FD200F8AA42 /* SignInViewController.xib in Resources */,
+				5468CA192B9FA11200F8AA42 /* Poppins-Bold.ttf in Resources */,
+				5468CA1A2B9FA11200F8AA42 /* Poppins-Regular.ttf in Resources */,
+				543FD5E02B83FCE400D39018 /* LaunchScreen.storyboard in Resources */,
+				543FD5DD2B83FCE400D39018 /* Assets.xcassets in Resources */,
+				543FD5D82B83FCE300D39018 /* Main.storyboard in Resources */,
+				5468CA182B9FA11200F8AA42 /* Poppins-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58E42C0A14CFABEC8AFCAD77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Talabaty/Pods-Talabaty-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Talabaty/Pods-Talabaty-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Talabaty/Pods-Talabaty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC688C1A5207841EB6921451 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Talabaty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		543FD5C92B83FCE300D39018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543FD5D52B83FCE300D39018 /* SplashViewController.swift in Sources */,
+				543FD5D12B83FCE300D39018 /* AppDelegate.swift in Sources */,
+				543FD5D32B83FCE300D39018 /* SceneDelegate.swift in Sources */,
+				5468086C2BAE1CFC006FFC56 /* SplashViewModel.swift in Sources */,
+				54C15EB22BB74F8A00DF06D7 /* RootRouter.swift in Sources */,
+				5468CA112B9F9FD200F8AA42 /* SignInViewController.swift in Sources */,
+				54C15EC02BB75B3D00DF06D7 /* SignInViewModel.swift in Sources */,
+				543FD5DB2B83FCE300D39018 /* Talabaty.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		543FD5D62B83FCE300D39018 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				543FD5D72B83FCE300D39018 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		543FD5DE2B83FCE400D39018 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				543FD5DF2B83FCE400D39018 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		543FD5E22B83FCE400D39018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		543FD5E32B83FCE400D39018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		543FD5E52B83FCE400D39018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E62FDB0F9E419D5B5FEE0B9C /* Pods-Talabaty.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M989A9QTSK;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Talabaty/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.m7amdelbana.Talabaty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		543FD5E62B83FCE400D39018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DECFD4F806BE8AE76952C752 /* Pods-Talabaty.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M989A9QTSK;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Talabaty/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.m7amdelbana.Talabaty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		543FD5C82B83FCE300D39018 /* Build configuration list for PBXProject "Talabaty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543FD5E22B83FCE400D39018 /* Debug */,
+				543FD5E32B83FCE400D39018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		543FD5E42B83FCE400D39018 /* Build configuration list for PBXNativeTarget "Talabaty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543FD5E52B83FCE400D39018 /* Debug */,
+				543FD5E62B83FCE400D39018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		543FD5D92B83FCE300D39018 /* Talabaty.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				543FD5DA2B83FCE300D39018 /* Talabaty.xcdatamodel */,
+			);
+			currentVersion = 543FD5DA2B83FCE300D39018 /* Talabaty.xcdatamodel */;
+			path = Talabaty.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 543FD5C52B83FCE300D39018 /* Project object */;
+}
