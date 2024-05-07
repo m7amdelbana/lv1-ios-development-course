@@ -1,0 +1,6 @@
+module Pods_TalabatyCore {
+  umbrella header "Pods-TalabatyCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
