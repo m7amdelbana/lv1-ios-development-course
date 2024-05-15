@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="Talabaty" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="RWJ-lE-5ih" id="vUc-bz-EjI"/>
+                <outlet property="nextButton" destination="FMq-oL-7RZ" id="UWW-00-jwj"/>
+                <outlet property="pageControl" destination="JL2-hx-acA" id="Jhv-hU-TTY"/>
+                <outlet property="skipButton" destination="T60-hy-0kr" id="EFq-O7-ZJq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="RWJ-lE-5ih">
+                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="xGV-vu-2bh">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HYi-ZI-Bus">
+                    <rect key="frame" x="36" y="748" width="321" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T60-hy-0kr">
+                            <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" name="text-2"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="Onboarding.skip"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionSkip:" destination="-1" eventType="touchUpInside" id="8RX-WD-SwT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMq-oL-7RZ">
+                            <rect key="frame" x="273" y="0.0" width="48" height="30"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" name="primary-dark"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="Onboarding.next"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionNext:" destination="-1" eventType="touchUpInside" id="c2E-Jc-S2U"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="JL2-hx-acA">
+                    <rect key="frame" x="138.66666666666666" y="750.33333333333337" width="115.66666666666666" height="25.666666666666629"/>
+                    <color key="pageIndicatorTintColor" name="hint"/>
+                    <color key="currentPageIndicatorTintColor" name="primary-dark"/>
+                </pageControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HYi-ZI-Bus" secondAttribute="trailing" constant="36" id="63i-se-f2v"/>
+                <constraint firstAttribute="bottom" secondItem="RWJ-lE-5ih" secondAttribute="bottom" id="7Ex-Ec-iZJ"/>
+                <constraint firstItem="JL2-hx-acA" firstAttribute="centerY" secondItem="HYi-ZI-Bus" secondAttribute="centerY" id="G4l-zg-ZzL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RWJ-lE-5ih" secondAttribute="trailing" id="Mc7-8J-HyN"/>
+                <constraint firstItem="HYi-ZI-Bus" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="TbB-iu-bfn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HYi-ZI-Bus" secondAttribute="bottom" constant="40" id="ZYq-Q6-9X3"/>
+                <constraint firstItem="JL2-hx-acA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="afo-rM-V5K"/>
+                <constraint firstItem="RWJ-lE-5ih" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="iQR-bF-GF4"/>
+                <constraint firstItem="RWJ-lE-5ih" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="v7I-vg-ay8"/>
+            </constraints>
+            <point key="canvasLocation" x="87.786259541984734" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="hint">
+            <color red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary-dark">
+            <color red="0.42352941176470588" green="0.77254901960784317" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="text-2">
+            <color red="0.7686274509803922" green="0.7686274509803922" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

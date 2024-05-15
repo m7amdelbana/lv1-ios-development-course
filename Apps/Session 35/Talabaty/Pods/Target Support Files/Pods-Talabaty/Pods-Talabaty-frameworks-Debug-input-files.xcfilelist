@@ -1,0 +1,11 @@
+${PODS_ROOT}/Target Support Files/Pods-Talabaty/Pods-Talabaty-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Kingfisher-framework/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/MOLH-framework/MOLH.framework
+${BUILT_PRODUCTS_DIR}/MarqueeLabel-framework/MarqueeLabel.framework
+${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView-framework/NVActivityIndicatorView.framework
+${BUILT_PRODUCTS_DIR}/NotificationBannerSwift-framework/NotificationBannerSwift.framework
+${BUILT_PRODUCTS_DIR}/SnapKit-framework/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
