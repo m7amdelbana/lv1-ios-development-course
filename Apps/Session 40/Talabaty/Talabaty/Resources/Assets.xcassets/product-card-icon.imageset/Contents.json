@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "product-card-icon.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
